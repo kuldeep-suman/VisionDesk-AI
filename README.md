@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="visiondesk-banner.png" alt="VisionDesk AI - Multimodal Reception System" width="100%">
+</div>
+
 # VisionDesk AI
 
 ### Multimodal Intelligent Reception & Visitor Assistant System
