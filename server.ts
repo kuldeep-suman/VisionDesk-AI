@@ -464,6 +464,10 @@ const allowedWsOrigins = new Set([
   'http://127.0.0.1:3000',
 ]);
 
+if (process.env.RENDER_EXTERNAL_URL) {
+  allowedWsOrigins.add(new URL(process.env.RENDER_EXTERNAL_URL).origin);
+}
+
 const wss = new WebSocketServer({
   server,
   path: '/ws/live',
