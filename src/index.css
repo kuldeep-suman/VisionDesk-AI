@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #060d1a;
+    color: #e2e8f0;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes orb-breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.72;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.95;
+  }
+}
+
+@keyframes orb-pulse-ring {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.38);
+    opacity: 0;
+  }
+}
+
+.animate-orb-breathe {
+  animation: orb-breathe 3.8s ease-in-out infinite;
+}
+
+.animate-orb-ring {
+  animation: orb-pulse-ring 2.2s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orb-breathe,
+  .animate-orb-ring {
+    animation: none;
+  }
+}

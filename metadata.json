@@ -1,0 +1,6 @@
+{
+  "name": "VisionDesk AI",
+  "description": "Multimodal Intelligent Reception & Visitor Assistant System for Career Point University, Kota, Rajasthan.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
